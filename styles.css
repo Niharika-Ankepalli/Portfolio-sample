@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h3 {
+    color: #34495e;
+}
+
+a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+#products {
+    background-color: #ecf0f1;
+}
+
+#contact {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+/* Welcome Section */
+#welcome {
+    background-color:#b47ee5;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#welcome nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#welcome nav a {
+    font-size: 18px;
+}
+
+/* About Me Section */
+#about {
+    background-color: white;
+    padding: 40px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #2980b9;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+#projects .project-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Product Showcase Section */
+#products .product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 250px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* To-Do List Section */
+#todo input, #todo button {
+    padding: 10px;
+    margin: 10px;
+}
+
+#todo ul {
+    list-style-type: none;
+}
+
+/* Contact Form Section */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#contact button:hover {
+    background-color: #3498db;
+}
+
+#thank-you-message {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #about .about-container {
+        flex-direction: column;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+
+    #projects .project-cards {
+        flex-direction: column;
+    }
+
+    #products .product-grid {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niharika Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Section -->
+    <section id="welcome">
+        <div class="welcome-container">
+            <h1>Welcome to Niharika's Portfolio</h1>
+            <p>Explore my projects, skills, and more!</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#products">Product Showcase</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="niharika.webp" alt="Niharika" class="about-img">
+            </div>
+            <div class="about-text">
+                <p>Hi, I'm Niharika, a passionate web developer with expertise in building dynamic and responsive websites.</p>
+                <p>I specialize in front-end technologies like HTML, CSS, and JavaScript. I also have experience with back-end technologies like Python and SQL.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">SQL</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="icecream.jpg" alt="Sweet Scoops Ice Cream" class="project-img">
+                <h3>Sweet Scoops Ice Cream Shop</h3>
+                <p>A fun and interactive ice cream shop website built with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <img src="beach.jpg" alt="Travel & Tourism" class="project-img">
+                <h3>Travel & Tourism Website</h3>
+                <p>A website for a travel agency, built to provide tourists with detailed travel information.</p>
+            </div>
+            <div class="project-card">
+                <img src="ecommerce.jpg" alt="E-commerce Website" class="project-img">
+                <h3>E-commerce Website</h3>
+                <p>An online store built with a user-friendly design and integrated payment gateway.</p>
+            </div>
+            <div class="project-card">
+                <img src="patient.jpg" alt="Patient Management System" class="project-img">
+                <h3>Patient Management System</h3>
+                <p>A system designed to help manage patient records efficiently in a medical setup.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section id="products">
+        <h2>Product Showcase</h2>
+        <div class="filter-container">
+            <select id="category-filter">
+                <option value="">Select Category</option>
+                <option value="web">Web Development</option>
+                <option value="apps">Mobile Apps</option>
+            </select>
+            <select id="price-filter">
+                <option value="">Select Price Range</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+            <select id="rating-filter">
+                <option value="">Select Rating</option>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars & Above</option>
+            </select>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section id="todo">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="Add a task">
+        <button id="add-task">Add Task</button>
+        <ul id="todo-list"></ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="thank-you-message" style="display: none;">Thank you for your message! I will get back to you shortly.</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
