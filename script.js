@@ -8,6 +8,11 @@ const products = [
     { id: 6, name: "JavaScript Masterclass", price: 49.99, rating: 4, category: "web", image: "js.jpg" }
 ];
 
+
+
+
+
+
 // Function to render products
 function renderProducts(productsToDisplay) {
     const productGrid = document.getElementById('product-grid');
@@ -31,10 +36,30 @@ function renderProducts(productsToDisplay) {
 // Initial render
 renderProducts(products);
 
+
+
+
+
+
+
+
+
+
 // Filter and Sort Functionality
 document.getElementById('category-filter').addEventListener('change', filterProducts);
 document.getElementById('price-filter').addEventListener('change', filterProducts);
 document.getElementById('rating-filter').addEventListener('change', filterProducts);
+
+
+
+
+
+
+
+
+
+
+
 
 function filterProducts() {
     let filteredProducts = [...products];
@@ -44,6 +69,12 @@ function filterProducts() {
         filteredProducts = filteredProducts.filter(product => product.category === categoryFilter);
     }
 
+
+
+
+
+
+    
     const priceFilter = document.getElementById('price-filter').value;
     if (priceFilter === 'low') {
         filteredProducts = filteredProducts.sort((a, b) => a.price - b.price);
@@ -51,6 +82,11 @@ function filterProducts() {
         filteredProducts = filteredProducts.sort((a, b) => b.price - a.price);
     }
 
+
+
+
+
+    
     const ratingFilter = document.getElementById('rating-filter').value;
     if (ratingFilter) {
         filteredProducts = filteredProducts.filter(product => product.rating >= ratingFilter);
@@ -58,6 +94,15 @@ function filterProducts() {
 
     renderProducts(filteredProducts);
 }
+
+
+
+
+
+
+
+
+
 
 // To-Do List Functionality
 document.getElementById('add-task').addEventListener('click', function() {
@@ -73,15 +118,252 @@ document.getElementById('add-task').addEventListener('click', function() {
     }
 });
 
+
+
+
+
+
+
 function removeTask(button) {
     button.parentElement.remove();
 }
+
+
+
+
+
+
+
+
+
+
 
 // Contact Form Submission
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     document.getElementById('thank-you-message').style.display = 'block';
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
